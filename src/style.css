@@ -17,15 +17,19 @@ body {
     height: 100%;
     display: grid;
     grid-template-rows: minmax(100px, .5fr) minmax(300px, 3fr) minmax(100px, .25fr);
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0)),
+        url("/foodpic.jpeg"); 
 }
 
 .nav, .main, .footer {
     border: .5px solid var(--secondary-color);
-    background-color:var(--primary-color);
+    
 }
 
 .main {
-   /* background-image: url("/foodpic.jpeg"); */
+
    
 }
 
