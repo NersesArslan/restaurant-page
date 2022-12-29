@@ -3,12 +3,58 @@ html, body {
     
 }
 
-#content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+:root {
+    --primary-color: white; 
+    --secondary-color: black;
+    --tertiary-color: #e5e7eb;
 }
 
-.header {
-    color: blue;
+body {
+   
+    height: 100vh;
 }
+#content {
+    height: 100%;
+    display: grid;
+    grid-template-rows: minmax(100px, .5fr) minmax(300px, 3fr) minmax(100px, .25fr);
+}
+
+.nav, .main, .footer {
+    border: .5px solid var(--secondary-color);
+    background-color:var(--primary-color);
+}
+
+.main {
+   /* background-image: url("/foodpic.jpeg"); */
+   
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navbar{
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
+    margin-right: 35px;
+}
+
+.navbar>div {
+    color: var(--secondary-color);
+   border: var(--secondary-color) solid 1px;
+   height: 60px;
+   width: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+}
+
+.navbar>div:hover {
+    background-color: var(--tertiary-color);
+}
+
