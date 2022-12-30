@@ -1,3 +1,2 @@
 import './style.css';
-
-console.log('resto-page')
+import _ from 'lodash';

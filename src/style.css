@@ -4,10 +4,18 @@ html, body {
 }
 
 :root {
-    --primary-color: white; 
+    --primary-color: #f7fee7; 
     --secondary-color: black;
     --tertiary-color: #e5e7eb;
 }
+
+@font-face {
+    font-family: 'myFont';
+    src: url('DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-size: 20px;
+}
+
+
 
 body {
    
@@ -23,14 +31,16 @@ body {
         url("/foodpic.jpeg"); 
 }
 
-.nav, .main, .footer {
+.nav  {
     border: .5px solid var(--secondary-color);
     
 }
 
 .main {
-
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .nav {
@@ -48,17 +58,36 @@ body {
 }
 
 .navbar>div {
-    color: var(--secondary-color);
+    color: var(--primary-color);
    border: var(--secondary-color) solid 1px;
    height: 60px;
    width: 100px;
    display: flex;
    justify-content: center;
    align-items: center;
- 
+   
+    
 }
 
 .navbar>div:hover {
-    background-color: var(--tertiary-color);
+    background-color:#64748b;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    
+   
+    height: 400px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.header, .main-text {
+    color: var(--primary-color);
+    font-family: 'myFont';
+    line-height: 150%;
+}
