@@ -89,7 +89,7 @@ a {
    
 }
 
-.header, .main-text {
+ .header, .main-text {
     color: var(--primary-color);
     font-family: 'myFont';
     line-height: 150%;
@@ -98,12 +98,17 @@ a {
 
 .menuList {
     height: 100%;
-    width: 100%;
+    width: 90%;
     background-color: linen;
     border-radius: 8px;
+    padding: 10px;
 }
 
 .listing {
     display: flex;
     justify-content: space-between;
+    font-family: 'myFont';
+
 }
+
+  
