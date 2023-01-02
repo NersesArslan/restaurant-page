@@ -76,15 +76,17 @@ a {
 }
 
 .container {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 400px;
-    padding: 20px;
+    height: 100%;
+    padding: 10px;
     border-radius: 8px;
     
+   
 }
 
 .header, .main-text {
@@ -93,3 +95,15 @@ a {
     line-height: 150%;
 }
 
+
+.menuList {
+    height: 100%;
+    width: 100%;
+    background-color: linen;
+    border-radius: 8px;
+}
+
+.listing {
+    display: flex;
+    justify-content: space-between;
+}
