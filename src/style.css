@@ -86,7 +86,14 @@ a {
     padding: 10px;
     border-radius: 8px;
     
-   
+}
+
+.buffer {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
  .header, .main-text {
