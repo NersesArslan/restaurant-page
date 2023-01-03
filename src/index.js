@@ -1,6 +1,7 @@
 import './style.css';
 import _ from 'lodash';
 import menuPageRendering from './menu.js';
+import testFunction from './contact.js';
 
 /*  use this to refactor created elements.
 
@@ -73,7 +74,7 @@ main.appendChild(container)
 
 
 
-function homePageRendering() {
+
     const header = document.createElement('h1')
     header.classList.add('header')
     header.textContent = 'Welcome to Pasolini\'s!'
@@ -86,11 +87,24 @@ function homePageRendering() {
     container.appendChild(paragraph)
 
     
-}
 
 
 
-menuPageRendering(container);
 
 
-// homePageRendering()
+
+// menuPageRendering(container);
+
+ //testFunction(container)
+
+ home.addEventListener('click', () => {
+    
+    homePageRendering()
+ })
+
+ menu.addEventListener('click', () => {
+    container.removeChild(header);
+    container.removeChild(paragraph);
+
+    menuPageRendering(container);
+ })

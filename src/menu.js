@@ -69,5 +69,4 @@ export default function menuPageRendering(container) {
        menuList.appendChild(appender(allaPalla.makeListing(), allaPalla.makeItem(), allaPalla.makePrice()));
     }
 
-    //al Taglio
-    //Siciliana
+   
