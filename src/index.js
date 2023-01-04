@@ -3,19 +3,6 @@ import _ from 'lodash';
 import menuPageRendering from './menu.js';
 import testFunction from './contact.js';
 
-/*  use this to refactor created elements.
-
-const elementMaker = (name, element) => {
-    const createElement = () => {
-         name = document.createElement(element);
-         name.classList.add(name);
-         return name;
-    }
-    return {name, element, createElement};
-};
-};
-
-*/
 
 const content = document.getElementById('content')
 
